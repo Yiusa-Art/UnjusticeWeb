@@ -884,7 +884,7 @@ h1.revealMCH.activated {
 
 .series-card.revealMS.activated {
     min-height: 2vh;
-    width: 352px;
+    width: clamp(260px, 18.3vw, 18.3vw);
     text-align: center;
     transition: all 0.8s ease-out;    
     border: 2.5px blueviolet solid;
@@ -943,6 +943,7 @@ h1.revealMCH.activated {
 
 .series-values a {
     position: relative;
+    color: white;
     /* font-size: 3rem;
     letter-spacing: 8px;
     z-index: 999;
@@ -952,7 +953,7 @@ h1.revealMCH.activated {
 .imgMS {
     position: absolute;
     height: 0;
-    width: 352px;
+    width: 18.3vw;
     opacity: 0;
     transform: skew(0deg);
     transition: 1.8s ease-in-out;
@@ -961,10 +962,10 @@ h1.revealMCH.activated {
 }
 
 .imgMS.activated {
-    position: absolute;
-    transform: translateY(0%) skew(-4deg) translateX(-3%);
-    height: 70vh;
-    width: 352px;
+    position: relative;
+    /* transform: translateY(0%) skew(-4deg) translateX(-3%); */
+    height: clamp(500px, 70vh, 70vh);
+    width: clamp(260px, 18.3vw, 18.3vw);
     opacity: 0.85;
 }
 

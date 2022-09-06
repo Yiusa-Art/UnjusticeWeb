@@ -77,9 +77,6 @@
         if(revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('activated');
         }
-        else {
-            reveals[i].classList.remove('activated'); 
-        }
       }
 
     }
@@ -98,9 +95,7 @@
         if(revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('activated');
         }
-        else {
-            reveals[i].classList.remove('activated'); 
-        }
+
       }
 
     }
